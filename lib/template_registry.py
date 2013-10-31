@@ -229,11 +229,16 @@ class TemplateRegistry(object):
         header_hex = binascii.hexlify(header_bin)
         header_hex = header_hex+"000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000"
         
-                 
-        target_user = self.diff_to_target(difficulty)        
-        if hash_int > target_user and \
-		( 'prev_jobid' not in session or session['prev_jobid'] < job_id
-            raise SubmitException("Share is above target")
+		target_user = self.diff_to_target(difficulty)
+        if  'prev_diff' in session:
+                prev_target = self.diff_to_target(session['prev_diff'])
+                if prev_target > target_user:
+                        if hash_int > prev_target:
+                                log.info("prev-high-hash")
+                                raise SubmitException("prev-high-hash")
+
+        if hash_int > target_user:
+                raise SubmitException("high-hash")
 
         # Mostly for debugging purposes
         target_info = self.diff_to_target(100000)

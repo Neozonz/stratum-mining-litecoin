@@ -14,6 +14,11 @@ A special thanks to everyone that has donated to this project.
 * john__ @ freenode
 * [neamiss] (http://dgc.scryptmining.com) @ freenode
 
+#Special Thanks
+
+* Pooler
+* TheSerapher
+
 Litecoin Donations are welcome: LdaQyrh8PaLTuBxtgGo97Pj49CScqMTxvX
 
 #Features
@@ -68,6 +73,7 @@ I try to stay in #stratum-mining-litecoin on freenode. I am more responsive to r
 * Modified version Wade Womersley (Media Skunk Works)
 * Scrypt conversion from work done by viperaus
 * Modified version by moopless ( Donations Welcome: LdaQyrh8PaLTuBxtgGo97Pj49CScqMTxvX)
+* Further updates & maintenance by Neozonz ( Donations welcome at Les4Ji2xC1rv6SyYLwCCz48M4XwTYAKvq6 or mine on my pool [Mine-Litecoin](https://www.Mine-Litecoin.com))
 
 
 #License
